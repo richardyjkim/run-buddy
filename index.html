@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Run Buddy</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
 <body>
- <!-- navigation -->
+    <!-- navigate tags - block level element -->
     <header>
         <h1>
-            <a href="/">
-                RUN BUDDY
-            </a>
+            <a href="/">RUN BUDDY</a>
         </h1>
         <nav>
             <ul>
@@ -30,21 +25,28 @@
                 <li>
                     <a href="#reach-out">Reach Out</a>
                 </li>
+                
             </ul>
         </nav>
     </header>
+    <!-- end navigation -->
 
-<!--  hero/jumbotron -->
+    <!--  hero/jumbotron -->
     <section class="hero">
         <div class="hero-cta">
             <h2>Start Building Habits.</h2>
-            <p>seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
+            <p>
+                seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it 
+                messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund 
+                Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche 
+                tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you 
+                probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
             </p>
         </div>
+
         <div class="hero-form">
             <h3>Get Started Today!</h3>
             <p>Fill out this form and one of our trainers will schedule a consult</p>
-<!-- Add form element -->
             <form>
                 <label for="name">Enter full name:</label>
                 <input type="text" placeholder="Your name" name="name" id="name" class="form-input">
@@ -52,7 +54,6 @@
                 <input type="text" placeholder="Email Address" name="email" id="email" class="form-input">
                 <label for="phone">Enter a telephone number:</label>
                 <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input">
-                
                 <p>
                     Have you worked out with a trainer before?
                     <input type="radio" name="trainer-confirm" id="trainer-yes" />
@@ -64,6 +65,7 @@
                     <label for="checkbox">
                         I acknowledge that I am atleast 18 years of age.
                     </label>
+                    <input type="checkbox" name="checkpoint1" id="checkbox" />
                 </p>
                 <button type="submit">
                     Get running!
@@ -71,39 +73,77 @@
             </form>
         </div>
     </section>
+    <!-- end header -->
 
 <!-- "what we do section"  -->
     <section id="what-we-do" class="intro">
-        <h2 class="section-title primary-border">What We Do</h2>
-        <p>butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft 
-        </p>
+        <div class= "flex-row">
+            <h2 class="section-title primary-border">
+            What We Do
+            </h2>
+        </div>
+        <div class="flex-row">
+            <p>
+                butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft 
+            </p>
+        </div>
     </section>
+    <!-- end "what we do section" -->
 
-<!-- "What you do section" -->
+    <!-- "What you do section" -->
     <section id="what-you-do" class="steps">
-        <h2 class="section-title secondary-border">What You Do</h2>
-
-        <div>
-            <img src="assets/Image/step-1.svg" alt="" />
-            <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-            <p>You're already here, so why not?</p>
+        <div class="flex-row">
+        <h2 class="section-title secondary-border">
+            What You Do
+        </h2>
         </div>
-
-        <div>
-            <img src="assets/Image/step-2.svg" alt="" />
-            <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-            <p>Are you here to build muscle, lose weight, or just feel good?</p>
+        <div class="step">
+            <h3>Step 1.</h3>
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="assets/Image/step-1.svg" alt="" />
+                </div>
+                <div class="step-text">
+                    <h4>Fill Out the Form Above.</h4>
+                    <p>You're already here, so why not?</p>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <img src="assets/Image/step-3.svg" alt="" />
-            <h3>Step 3: <span>Get Running.</span></h3>
+        <div class="step">
+            <h3>Step 2.</h3> 
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="assets/Image/step-2.svg" alt="" />
+                </div>
+                <div class="step-text">
+                    <h4>with One of Our Trainers.</h4>
+                    <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                </div>
+            </div>    
+        </div>
+        <div class="step">    
+            <h3>Step 3.</h3>
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="assets/Image/step-3.svg" alt="" />
+                    </div>
+                <div class="step-text">
+             <h4>Get Running</h4>
             <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
-
-        <div>
-            <img src="assets/Image/step-4.svg" alt="" />
-            <h3>Step 4: <span>See Results.</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Step 4.</h3> 
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="assets/Image/step-4.svg" alt="" />
+                </div>
+                <div class="step-text">
+                <h4>See Results</h4>
             <p>Bi-weekly checkins with your trainer will keep you focused</p>
+                </div>
+            </div>    
         </div>
     </section>
 
@@ -184,7 +224,7 @@
     <footer>
         <h2>❤️ Made with love by Run Buddy.</h2>
         <div>
-            <a href="#">Read Our Policy</a><br />
+            <a href="./privacy-policy.html"></a>>Read Our Policy</a><br />
             &copy; 2019 Run Buddy, Inc.
         </div>   
     </footer>
